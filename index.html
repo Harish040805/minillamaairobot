@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" type="image/png">
+	<link rel="icon" href="C:\Users\HP\Downloads\WhatsApp Image 2025-04-23 at 2.15.40 PM.jpeg" type="image/png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mini - Llama AI Robot (By Perplexity AI)</title>
+	<title>Mini - Harish Creations Robot</title>
 <style>
 :root {
     --primary-color: #333;
@@ -19,7 +19,7 @@
 }
 body {
     margin: 0;
-    background-image: url('blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d');
+    background-image: url('7db2e199-c244-4e17-ae27-83005b93399d.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: repeat;
@@ -243,7 +243,7 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 }
-.modal {
+	    .modal {
       display: none;
       position: fixed;
       z-index: 1;
@@ -324,6 +324,8 @@ body {
       height: 80%;
       border: none;
     }
+    </style>
+		<style>
 .modal {
   display: none;
   position: fixed;
@@ -461,20 +463,17 @@ body {
     opacity: 0.7;
   }
 }
-        @keyframes spin {
-            0% {
-            transform: rotate(0deg);
-            }
-            100% {
-            transform: rotate(360deg);
-            }
-        }
-    </style>
+		</style>
 </head>
 <body style="font-family: 'Courier New', monospace;">
 	<div id="splash-screen">
-        <img src="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" alt="Splash Screen Image">
+        <img src="C:\Users\HP\Downloads\WhatsApp Image 2025-04-23 at 2.15.40 PM.jpeg" style="border-radius: 50%;" alt="Splash Screen Image">
     </div>
+	<script>
+setTimeout(() => {
+    document.getElementById('splash-screen').style.display = 'none';
+}, 3000);
+	</script>
 <center>
     <h1 style="color: #FFFFFF; background-color: #808080; padding: 10px; border-radius: 5px;">Harish Creations Robot</h1>
     <h2 style="color: #808080; background-color: #FFFFFF; padding: 5px; border: 1px solid #808080; border-radius: 5px;">By Harish Creations</h2>
@@ -508,14 +507,27 @@ body {
     </div>
     <div class="robot-torso" style="z-index: 2000;">
         <span class="robot-text" style="margin-bottom: 30px;">
-		<br><br><br><br><br>
-	
-            <img src="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" style="width: 60%; height: 60%;">
-            <br>Harish Creations Robot
+		<br><br><br><br>
+			<center>
+			<div style="object-fit: contain; width: 100px; height: 100px;">
+					<img src="C:\Users\HP\Downloads\WhatsApp Image 2025-04-23 at 2.15.40 PM.jpeg" style="width: 60%; height: 60%; border-radius: 50%;"><br>Harish Creations Robot
+			</div>
+			</center>
+	        
         </span>
 		<br><br><br>
 	<div id="mechanical-wheel-container"
 	style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 1  margin-top: 40px;">
+    <style>
+        @keyframes spin {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+    </style>
     <div class="wheel-container"
 	style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 1;">
 		<div class="wheel" style="z-index: 1; background: radial-gradient(#ffd700, #ff9900); position: relative; width: 100px; height: 100px; border-radius: 50%;
@@ -542,10 +554,20 @@ body {
     </div>
 	</div>
     </div>
-
 <div class="robot-turbo" style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center;">
   <div class="turbo-indicator"></div>
 </div>
+<script>
+const turboButton = document.getElementById('turbo-button');
+const turboIndicator = document.querySelector('.turbo-indicator');
+
+turboButton.addEventListener('click', () => {
+  turboIndicator.classList.add('turbo-active');
+  setTimeout(() => {
+    turboIndicator.classList.remove('turbo-active');
+  }, 5000); 
+});
+</script>
 	<div class="robot-cylinder"></div>
 </div>
 <div class="instruction-box">
@@ -565,49 +587,21 @@ body {
         <div class="item" id="left">←</div>
 		<div class="item" id="stop" onmouseover="showMessage()" onmouseout="hideMessage()">&#x25CB;</div>
 		<span id="message" style="display:none; position:absolute; z-index:1; background-color:#fff; padding:47px; border:1px solid #ddd; border-radius:5px; top: 70%; left: 80%; transform: translate(-50%, -150%);">Stop Button Resets the position of the Robot</span>
-
+		<script>
+		function showMessage() {
+			document.getElementById("message").style.display = "block";
+		}
+		function hideMessage() {
+			document.getElementById("message").style.display = "none";
+		}
+		</script>
         <div class="item" id="right">→</div>
         <div class="blank"></div>
         <div class="item" id="backward">↓</div>
         <div class="blank">
         </div>
     </div>
-  <div class="bottom-taskbar">
-    <button id="metaAIButton" onclick="openModal()">Ask Perplexity Labs AI</button>
-  </div>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <div class="resp-container">
-        <iframe id="metaAIIFrame" src="https://labs.perplexity.ai/" frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
-<script>
-setTimeout(() => {
-    document.getElementById('splash-screen').style.display = 'none';
-}, 3000);
-	
-const turboButton = document.getElementById('turbo-button');
-const turboIndicator = document.querySelector('.turbo-indicator');
-
-turboButton.addEventListener('click', () => {
-  turboIndicator.classList.add('turbo-active');
-  setTimeout(() => {
-    turboIndicator.classList.remove('turbo-active');
-  }, 5000); 
-});
-
-function showMessage() {
-	document.getElementById("message").style.display = "block";
-}
-function hideMessage() {
-	document.getElementById("message").style.display = "none";
-}
-
-function showAlert() {
-    alert("For better experience, view the webpage on Desktops or PC. Not remoccomded to view in Mobile phones.");
-}
+    <script>
 document.addEventListener('DOMContentLoaded', () => {
   const robotBody = document.querySelector('.robot-body');
   let x = 0;
@@ -618,7 +612,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let movingForward = false;
   let movingBackward = false;
   let animationFrameId = null;
-
 document.addEventListener('keydown', (e) => {
   switch (e.key) {
     case 'ArrowUp':
@@ -635,7 +628,6 @@ document.addEventListener('keydown', (e) => {
       break;
   }
 });
-
 document.addEventListener('keyup', (e) => {
   switch (e.key) {
     case 'ArrowUp':
@@ -652,7 +644,6 @@ document.addEventListener('keyup', (e) => {
       break;
   }
 });
-
 function animate() {
   if (movingForward || buttonMovingForward) {
     x += movementIncrement * Math.sin(rotation * Math.PI / 180);
@@ -669,20 +660,16 @@ function animate() {
   robotBody.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
   animationFrameId = requestAnimationFrame(animate);
 }
-
   animationFrameId = requestAnimationFrame(animate);
-
 const forwardButton = document.getElementById('forward');
 const backwardButton = document.getElementById('backward');
 const leftButton = document.getElementById('left');
 const rightButton = document.getElementById('right');
 const stopButton = document.getElementById('stop');
-
 let buttonMovingForward = false;
 let buttonMovingBackward = false;
 let buttonRotatingLeft = false;
 let buttonRotatingRight = false;
-
 forwardButton.addEventListener('mousedown', () => {
   buttonMovingForward = true;
 });
@@ -692,7 +679,6 @@ forwardButton.addEventListener('mouseup', () => {
 forwardButton.addEventListener('mouseout', () => {
   buttonMovingForward = false;
 });
-
 backwardButton.addEventListener('mousedown', () => {
   buttonMovingBackward = true;
 });
@@ -702,7 +688,6 @@ backwardButton.addEventListener('mouseup', () => {
 backwardButton.addEventListener('mouseout', () => {
   buttonMovingBackward = false;
 });
-
 leftButton.addEventListener('mousedown', () => {
   buttonRotatingLeft = true;
 });
@@ -712,7 +697,6 @@ leftButton.addEventListener('mouseup', () => {
 leftButton.addEventListener('mouseout', () => {
   buttonRotatingLeft = false;
 });
-
 rightButton.addEventListener('mousedown', () => {
   buttonRotatingRight = true;
 });
@@ -738,40 +722,44 @@ stopButton.addEventListener('click', () => {
   animationFrameId = requestAnimationFrame(animate);
 });
 }); 
-
 const turboIndicators = document.querySelectorAll('.turbo-indicator');
-
 function startTurbo() {
   turboIndicators.forEach((indicator) => {
     indicator.classList.add('turbo-active');
   });
 }
-
 function stopTurbo() {
   turboIndicators.forEach((indicator) => {
     indicator.classList.remove('turbo-active');
   });
 }
-
 const controlButtons = document.querySelectorAll('.item');
 controlButtons.forEach((button) => {
   button.addEventListener('mousedown', startTurbo);
   button.addEventListener('mouseup', stopTurbo);
   button.addEventListener('mouseout', stopTurbo);
 });
-
+   </script>
+  <div class="bottom-taskbar">
+    <button id="metaAIButton" onclick="openModal()">Ask Perplexity Labs AI</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="resp-container">
+        <iframe id="metaAIIFrame" src="https://labs.perplexity.ai/" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <script>
     var modal = document.getElementById("myModal");
-    
     function openModal() {
       modal.style.display = "block";
     }
-    
     function closeModal() {
       modal.style.display = "none";
     }
-
     var iframe = document.getElementById("metaAIIFrame");
-
     iframe.onload = function() {
         iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     };
