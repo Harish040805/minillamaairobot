@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="https://scienzai.com/wp-content/uploads/2023/12/Perplexity-Logo.png" type="image/png">
+	<link rel="icon" href="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" type="image/png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mini - Llama AI Robot (By Perplexity AI)</title>
@@ -19,7 +19,7 @@
 }
 body {
     margin: 0;
-    background-image: url('https://scienzai.com/wp-content/uploads/2023/12/Perplexity-Logo.png');
+    background-image: url('blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d');
     background-size: cover;
     background-position: center top;
     background-repeat: repeat;
@@ -183,7 +183,6 @@ body {
 .right-arm, .right-leg {
     right: -94px;
 }
-/* Control Panel */
 .instruction-container {
   display: flex;
   flex-wrap: wrap;
@@ -244,7 +243,7 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
 }
-	    .modal {
+.modal {
       display: none;
       position: fixed;
       z-index: 1;
@@ -325,8 +324,6 @@ body {
       height: 80%;
       border: none;
     }
-    </style>
-		<style>
 .modal {
   display: none;
   position: fixed;
@@ -464,20 +461,23 @@ body {
     opacity: 0.7;
   }
 }
-		</style>
+        @keyframes spin {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body style="font-family: 'Courier New', monospace;">
 	<div id="splash-screen">
-        <img src="https://scienzai.com/wp-content/uploads/2023/12/Perplexity-Logo.png" alt="Splash Screen Image">
+        <img src="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" alt="Splash Screen Image">
     </div>
-	<script>
-setTimeout(() => {
-    document.getElementById('splash-screen').style.display = 'none';
-}, 3000);
-	</script>
 <center>
-    <h1 style="color: #FFFFFF; background-color: #808080; padding: 10px; border-radius: 5px;">Llama AI Robot</h1>
-    <h2 style="color: #808080; background-color: #FFFFFF; padding: 5px; border: 1px solid #808080; border-radius: 5px;">By Perplexity AI (Meta)</h2>
+    <h1 style="color: #FFFFFF; background-color: #808080; padding: 10px; border-radius: 5px;">Harish Creations Robot</h1>
+    <h2 style="color: #808080; background-color: #FFFFFF; padding: 5px; border: 1px solid #808080; border-radius: 5px;">By Harish Creations</h2>
 </center>
 <div class="robot-body">
     <div class="robot-head">
@@ -510,22 +510,12 @@ setTimeout(() => {
         <span class="robot-text" style="margin-bottom: 30px;">
 		<br><br><br><br><br>
 	
-            <img src="https://scienzai.com/wp-content/uploads/2023/12/Perplexity-Logo.png" style="width: 60%; height: 60%;">
-            <br>Llama AI Robot
+            <img src="blob:https://web.whatsapp.com/7db2e199-c244-4e17-ae27-83005b93399d" style="width: 60%; height: 60%;">
+            <br>Harish Creations Robot
         </span>
 		<br><br><br>
 	<div id="mechanical-wheel-container"
 	style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 1  margin-top: 40px;">
-    <style>
-        @keyframes spin {
-            0% {
-            transform: rotate(0deg);
-            }
-            100% {
-            transform: rotate(360deg);
-            }
-        }
-    </style>
     <div class="wheel-container"
 	style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 1;">
 		<div class="wheel" style="z-index: 1; background: radial-gradient(#ffd700, #ff9900); position: relative; width: 100px; height: 100px; border-radius: 50%;
@@ -537,7 +527,6 @@ setTimeout(() => {
 			style="z-index: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%;
             border: 2px solid #cc9900;
 			"></div>
-            <!-- Spokes -->
             <div class="spoke" style="z-index: 1; transform: translate(-50%, -50%) rotate(330deg);
 			position: absolute;
             top: 50%;
@@ -553,26 +542,12 @@ setTimeout(() => {
     </div>
 	</div>
     </div>
-	<!-- Turbo -->
 
 <div class="robot-turbo" style="position: relative; width: 100%; height: 100%; display: flex; justify-content: center;">
   <div class="turbo-indicator"></div>
 </div>
-<script>
-const turboButton = document.getElementById('turbo-button');
-const turboIndicator = document.querySelector('.turbo-indicator');
-
-turboButton.addEventListener('click', () => {
-  turboIndicator.classList.add('turbo-active');
-  setTimeout(() => {
-    turboIndicator.classList.remove('turbo-active');
-  }, 5000); 
-});
-</script>
-<!-- Turbo close -->
 	<div class="robot-cylinder"></div>
 </div>
-<!-- Instruction Box -->
 <div class="instruction-box">
 <center><h4>Control Panel Instructions</h4></center>
 <ul>
@@ -583,7 +558,6 @@ turboButton.addEventListener('click', () => {
 <li><strong>Stop</strong> (<span>&#x25CB;</span>) &nbsp : Reset Position</li>
 </ul>
 </div>
-<!-- Control Panel -->
     <div class="instruction-container">
         <div class="blank"></div>
         <div class="item" id="forward">↑</div>
@@ -591,21 +565,50 @@ turboButton.addEventListener('click', () => {
         <div class="item" id="left">←</div>
 		<div class="item" id="stop" onmouseover="showMessage()" onmouseout="hideMessage()">&#x25CB;</div>
 		<span id="message" style="display:none; position:absolute; z-index:1; background-color:#fff; padding:47px; border:1px solid #ddd; border-radius:5px; top: 70%; left: 80%; transform: translate(-50%, -150%);">Stop Button Resets the position of the Robot</span>
-		<script>
-		function showMessage() {
-			document.getElementById("message").style.display = "block";
-		}
-		function hideMessage() {
-			document.getElementById("message").style.display = "none";
-		}
-		</script>
+
         <div class="item" id="right">→</div>
         <div class="blank"></div>
         <div class="item" id="backward">↓</div>
         <div class="blank">
         </div>
     </div>
-    <script>
+  <div class="bottom-taskbar">
+    <button id="metaAIButton" onclick="openModal()">Ask Perplexity Labs AI</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="resp-container">
+        <iframe id="metaAIIFrame" src="https://labs.perplexity.ai/" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <script>
+<script>
+setTimeout(() => {
+    document.getElementById('splash-screen').style.display = 'none';
+}, 3000);
+	
+const turboButton = document.getElementById('turbo-button');
+const turboIndicator = document.querySelector('.turbo-indicator');
+
+turboButton.addEventListener('click', () => {
+  turboIndicator.classList.add('turbo-active');
+  setTimeout(() => {
+    turboIndicator.classList.remove('turbo-active');
+  }, 5000); 
+});
+
+function showMessage() {
+	document.getElementById("message").style.display = "block";
+}
+function hideMessage() {
+	document.getElementById("message").style.display = "none";
+}
+
+function showAlert() {
+    alert("For better experience, view the webpage on Desktops or PC. Not remoccomded to view in Mobile phones.");
+}
 document.addEventListener('DOMContentLoaded', () => {
   const robotBody = document.querySelector('.robot-body');
   let x = 0;
@@ -616,8 +619,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let movingForward = false;
   let movingBackward = false;
   let animationFrameId = null;
-
-
 
 document.addEventListener('keydown', (e) => {
   switch (e.key) {
@@ -653,7 +654,6 @@ document.addEventListener('keyup', (e) => {
   }
 });
 
-// Animation loop
 function animate() {
   if (movingForward || buttonMovingForward) {
     x += movementIncrement * Math.sin(rotation * Math.PI / 180);
@@ -671,10 +671,8 @@ function animate() {
   animationFrameId = requestAnimationFrame(animate);
 }
 
-  // Start animation loop
   animationFrameId = requestAnimationFrame(animate);
 
-// Button movement
 const forwardButton = document.getElementById('forward');
 const backwardButton = document.getElementById('backward');
 const leftButton = document.getElementById('left');
@@ -742,13 +740,8 @@ stopButton.addEventListener('click', () => {
 });
 }); 
 
-
-
-
-// Get turbo indicators
 const turboIndicators = document.querySelectorAll('.turbo-indicator');
 
-// Define start and stop turbo functions
 function startTurbo() {
   turboIndicators.forEach((indicator) => {
     indicator.classList.add('turbo-active');
@@ -761,28 +754,13 @@ function stopTurbo() {
   });
 }
 
-// Add event listeners to control buttons
 const controlButtons = document.querySelectorAll('.item');
 controlButtons.forEach((button) => {
   button.addEventListener('mousedown', startTurbo);
   button.addEventListener('mouseup', stopTurbo);
   button.addEventListener('mouseout', stopTurbo);
 });
-   </script>
-<!-- Meta AI -->
 
-  <div class="bottom-taskbar">
-    <button id="metaAIButton" onclick="openModal()">Ask Perplexity Labs AI</button>
-  </div>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <div class="resp-container">
-        <iframe id="metaAIIFrame" src="https://labs.perplexity.ai/" frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
-  <script>
     var modal = document.getElementById("myModal");
     
     function openModal() {
@@ -799,10 +777,5 @@ controlButtons.forEach((button) => {
         iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     };
   </script>
-
-<!-- Meta AI close -->
-
-
-
 </body>
 </html>
